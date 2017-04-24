@@ -1,6 +1,4 @@
 require "randomizer/version"
-require "randomizer/result"
+require "randomizer/active_record_methods"
 
-module Randomizer
-  # Your code goes here...
-end
+ActiveRecord::Base.send :include, Randomizer::ActiveRecordMethods

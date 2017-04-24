@@ -1,7 +1,12 @@
 require "spec_helper"
 
-describe Randomizer::Result do
-  it "randomizes" do
-    expect(Randomizer::Result.grab).not_to be_nil
+describe Randomizer::RandomizerActiveRecordMethods do
+
+  describe "#get" do
+
+    it "randomizes" do
+      binding.pry
+      expect(Randomizer::RandomizerActiveRecordMethods.get).not_to be_nil
+    end
   end
 end
